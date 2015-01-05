@@ -16,6 +16,9 @@
 		9F7A36F61A56355B005F6CD4 /* deenageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A36F51A56355B005F6CD4 /* deenageTests.m */; };
 		9FEA90D41A5A44AD004E6DC5 /* DNMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA90D31A5A44AD004E6DC5 /* DNMainTabBarViewController.m */; };
 		9FEA90D71A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA90D61A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m */; };
+		9FEA90DA1A5A4AD5004E6DC5 /* DNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA90D91A5A4AD5004E6DC5 /* DNModel.m */; };
+		9FEA90DD1A5A4E23004E6DC5 /* DNSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA90DC1A5A4E23004E6DC5 /* DNSettings.m */; };
+		9FEA90E01A5A4E5D004E6DC5 /* DNNowPlaying.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA90DF1A5A4E5D004E6DC5 /* DNNowPlaying.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,12 @@
 		9FEA90D31A5A44AD004E6DC5 /* DNMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMainTabBarViewController.m; sourceTree = "<group>"; };
 		9FEA90D51A5A45F3004E6DC5 /* DNBeginPlaybackCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNBeginPlaybackCommand.h; sourceTree = "<group>"; };
 		9FEA90D61A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNBeginPlaybackCommand.m; sourceTree = "<group>"; };
+		9FEA90D81A5A4AD5004E6DC5 /* DNModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNModel.h; sourceTree = "<group>"; };
+		9FEA90D91A5A4AD5004E6DC5 /* DNModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNModel.m; sourceTree = "<group>"; };
+		9FEA90DB1A5A4E23004E6DC5 /* DNSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSettings.h; sourceTree = "<group>"; };
+		9FEA90DC1A5A4E23004E6DC5 /* DNSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSettings.m; sourceTree = "<group>"; };
+		9FEA90DE1A5A4E5D004E6DC5 /* DNNowPlaying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNNowPlaying.h; sourceTree = "<group>"; };
+		9FEA90DF1A5A4E5D004E6DC5 /* DNNowPlaying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNNowPlaying.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,12 @@
 		9F31D6291A566043006CBEEE /* model */ = {
 			isa = PBXGroup;
 			children = (
+				9FEA90D81A5A4AD5004E6DC5 /* DNModel.h */,
+				9FEA90D91A5A4AD5004E6DC5 /* DNModel.m */,
+				9FEA90DB1A5A4E23004E6DC5 /* DNSettings.h */,
+				9FEA90DC1A5A4E23004E6DC5 /* DNSettings.m */,
+				9FEA90DE1A5A4E5D004E6DC5 /* DNNowPlaying.h */,
+				9FEA90DF1A5A4E5D004E6DC5 /* DNNowPlaying.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -256,8 +271,11 @@
 				9FEA90D71A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m in Sources */,
 				9F7A36DC1A56355B005F6CD4 /* AppDelegate.m in Sources */,
 				9FEA90D41A5A44AD004E6DC5 /* DNMainTabBarViewController.m in Sources */,
+				9FEA90E01A5A4E5D004E6DC5 /* DNNowPlaying.m in Sources */,
+				9FEA90DA1A5A4AD5004E6DC5 /* DNModel.m in Sources */,
 				9F31D6271A564D48006CBEEE /* DNLecturesTableViewController.m in Sources */,
 				9F7A36D91A56355B005F6CD4 /* main.m in Sources */,
+				9FEA90DD1A5A4E23004E6DC5 /* DNSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

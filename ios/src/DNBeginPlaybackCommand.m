@@ -10,7 +10,7 @@
 
 @implementation DNBeginPlaybackCommand
 
-+ (void)switchToPlaybackTabAndResumePlaying:(NSObject*)audioItem
++ (void)switchToPlaybackTabAndResumePlaying:(NSObject *)audioItem
 {
     //TODO: If already playing, record track and time to history DB.
     

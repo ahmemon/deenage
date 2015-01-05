@@ -1,5 +1,5 @@
 //
-//  DNBeginPlaybackCommand.h
+//  DNSettings.h
 //  deenage
 //
 //  Created by Amir Memon on 1/4/15.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DNBeginPlaybackCommand : NSObject
-
-+ (void)switchToPlaybackTabAndResumePlaying:(NSObject *)audioItem;
+@interface DNSettings : NSObject
 
 @end
