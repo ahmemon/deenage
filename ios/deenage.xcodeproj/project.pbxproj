@@ -14,6 +14,8 @@
 		9F7A36E71A56355B005F6CD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A36E61A56355B005F6CD4 /* Images.xcassets */; };
 		9F7A36EA1A56355B005F6CD4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A36E81A56355B005F6CD4 /* LaunchScreen.xib */; };
 		9F7A36F61A56355B005F6CD4 /* deenageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A36F51A56355B005F6CD4 /* deenageTests.m */; };
+		9FEA90D41A5A44AD004E6DC5 /* DNMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA90D31A5A44AD004E6DC5 /* DNMainTabBarViewController.m */; };
+		9FEA90D71A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA90D61A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9F7A36EF1A56355B005F6CD4 /* deenageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deenageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7A36F41A56355B005F6CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F7A36F51A56355B005F6CD4 /* deenageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = deenageTests.m; sourceTree = "<group>"; };
+		9FEA90D21A5A44AD004E6DC5 /* DNMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMainTabBarViewController.h; sourceTree = "<group>"; };
+		9FEA90D31A5A44AD004E6DC5 /* DNMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMainTabBarViewController.m; sourceTree = "<group>"; };
+		9FEA90D51A5A45F3004E6DC5 /* DNBeginPlaybackCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNBeginPlaybackCommand.h; sourceTree = "<group>"; };
+		9FEA90D61A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNBeginPlaybackCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 			children = (
 				9F31D6251A564D48006CBEEE /* DNLecturesTableViewController.h */,
 				9F31D6261A564D48006CBEEE /* DNLecturesTableViewController.m */,
+				9FEA90D21A5A44AD004E6DC5 /* DNMainTabBarViewController.h */,
+				9FEA90D31A5A44AD004E6DC5 /* DNMainTabBarViewController.m */,
 				9F7A36E31A56355B005F6CD4 /* Main.storyboard */,
 			);
 			name = view;
@@ -80,6 +88,8 @@
 		9F31D62A1A56604B006CBEEE /* commands */ = {
 			isa = PBXGroup;
 			children = (
+				9FEA90D51A5A45F3004E6DC5 /* DNBeginPlaybackCommand.h */,
+				9FEA90D61A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m */,
 			);
 			name = commands;
 			sourceTree = "<group>";
@@ -243,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEA90D71A5A45F3004E6DC5 /* DNBeginPlaybackCommand.m in Sources */,
 				9F7A36DC1A56355B005F6CD4 /* AppDelegate.m in Sources */,
+				9FEA90D41A5A44AD004E6DC5 /* DNMainTabBarViewController.m in Sources */,
 				9F31D6271A564D48006CBEEE /* DNLecturesTableViewController.m in Sources */,
 				9F7A36D91A56355B005F6CD4 /* main.m in Sources */,
 			);

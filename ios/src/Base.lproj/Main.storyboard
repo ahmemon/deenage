@@ -16,45 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cr-P0-5EF">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cr-P0-5EF">
                                 <rect key="frame" x="277" y="422" width="46" height="30"/>
                                 <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taJ-0O-a38">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taJ-0O-a38">
                                 <rect key="frame" x="277" y="460" width="46" height="30"/>
                                 <state key="normal" title="Pause">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPA-LR-o9T">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPA-LR-o9T">
                                 <rect key="frame" x="108" y="440" width="161" height="30"/>
                                 <state key="normal" title="Rewind 30 Seconds">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-ZE-Cub">
-                                <rect key="frame" x="331" y="440" width="208" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-ZE-Cub">
+                                <rect key="frame" x="331" y="440" width="111" height="38"/>
                                 <state key="normal" title="Skip Forward 30 Seconds">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4UT-U6-FxX">
-                                <rect key="frame" x="16" y="20" width="568" height="299"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hI-Lm-1BL">
+                                <rect key="frame" x="265" y="498" width="71" height="30"/>
+                                <state key="normal" title="Bookmark">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4UT-U6-FxX">
+                                <rect key="frame" x="16" y="144" width="568" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">When in Driving Mode: Tap to Play or Pause. Swipe left to rewind back 30 seconds. Swipe right to skip forward 30 seconds. Long press to bookmark.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hI-Lm-1BL">
-                                <rect key="frame" x="277" y="498" width="71" height="30"/>
-                                <state key="normal" title="Bookmark">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2zs-78-b6Z" firstAttribute="top" secondItem="4cr-P0-5EF" secondAttribute="bottom" constant="99" id="27I-U7-9Ee"/>
+                            <constraint firstAttribute="centerX" secondItem="6hI-Lm-1BL" secondAttribute="centerX" constant="-0.5" id="9A2-5X-lgp"/>
+                            <constraint firstItem="4cr-P0-5EF" firstAttribute="leading" secondItem="BPA-LR-o9T" secondAttribute="trailing" constant="8" id="Esn-p0-3lk"/>
+                            <constraint firstItem="4UT-U6-FxX" firstAttribute="top" secondItem="vIi-Av-hmS" secondAttribute="bottom" constant="124" id="JJX-6T-o55"/>
+                            <constraint firstItem="RkA-ZE-Cub" firstAttribute="leading" secondItem="4cr-P0-5EF" secondAttribute="trailing" constant="8" id="Nw8-FM-IsW"/>
+                            <constraint firstItem="2zs-78-b6Z" firstAttribute="top" secondItem="6hI-Lm-1BL" secondAttribute="bottom" constant="23" id="O3Q-Zr-b0K"/>
+                            <constraint firstItem="RkA-ZE-Cub" firstAttribute="top" secondItem="4cr-P0-5EF" secondAttribute="bottom" constant="-12" id="RYc-wP-yX7"/>
+                            <constraint firstAttribute="centerX" secondItem="4cr-P0-5EF" secondAttribute="centerX" id="Vc1-5V-gAr"/>
+                            <constraint firstItem="2zs-78-b6Z" firstAttribute="top" secondItem="taJ-0O-a38" secondAttribute="bottom" constant="61" id="Wee-lr-pcU"/>
+                            <constraint firstAttribute="centerX" secondItem="taJ-0O-a38" secondAttribute="centerX" id="ZNE-En-bhs"/>
+                            <constraint firstItem="2zs-78-b6Z" firstAttribute="top" secondItem="BPA-LR-o9T" secondAttribute="bottom" constant="81" id="ap6-az-kQs"/>
+                            <constraint firstItem="2zs-78-b6Z" firstAttribute="top" secondItem="RkA-ZE-Cub" secondAttribute="bottom" constant="73" id="jbn-ed-eWv"/>
+                            <constraint firstItem="4cr-P0-5EF" firstAttribute="leading" secondItem="BPA-LR-o9T" secondAttribute="trailing" constant="8" id="juV-uA-J2X"/>
+                            <constraint firstItem="BPA-LR-o9T" firstAttribute="top" secondItem="4cr-P0-5EF" secondAttribute="bottom" constant="-12" id="xDL-z3-EPM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Playback" id="a50-W2-Fxp"/>
                 </viewController>
@@ -62,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="732" y="-754"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="DNMainTabBarViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -73,8 +89,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="d4c-6h-Ruz" kind="relationship" relationship="viewControllers" id="swo-fQ-Web"/>
+                        <segue destination="bek-sU-xFH" kind="relationship" relationship="viewControllers" id="lTU-fY-B7H"/>
                         <segue destination="CaS-Ys-6fl" kind="relationship" relationship="viewControllers" id="tTP-mM-krY"/>
+                        <segue destination="ggU-D1-70D" kind="relationship" relationship="viewControllers" id="oSP-95-SH8"/>
+                        <segue destination="VZE-8q-6ik" kind="relationship" relationship="viewControllers" id="Erz-JK-Glj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -98,26 +116,118 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7q-mh-oj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1544" y="-98"/>
+            <point key="canvasLocation" x="1448" y="-101"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="4Tq-cU-vuB">
+            <objects>
+                <tableViewController id="RWZ-qC-C4W" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="if4-np-Qgd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="F7z-Bt-sTl">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F7z-Bt-sTl" id="TA9-Ie-u4e">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RWZ-qC-C4W" id="7LS-Sr-50l"/>
+                            <outlet property="delegate" destination="RWZ-qC-C4W" id="0yA-Bi-RhU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dO8-8I-TMI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prP-Cy-hPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="1316"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="qb9-aK-jKI">
+            <objects>
+                <tableViewController id="S8y-Er-LpA" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DGQ-BI-bcj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HcI-WD-mUw">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HcI-WD-mUw" id="KXa-GS-Yqz">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="S8y-Er-LpA" id="svB-Zw-ecb"/>
+                            <outlet property="delegate" destination="S8y-Er-LpA" id="sZ2-hJ-9wy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Ruo-UV-ATW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJK-mc-4eQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="624"/>
         </scene>
         <!--Deenage-->
-        <scene sceneID="6jx-Py-Rwn">
+        <scene sceneID="83K-jO-7WB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d4c-6h-Ruz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Deenage" id="3eJ-gv-A2g"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bek-sU-xFH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Deenage" id="7jm-9x-KPA"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ORy-bR-IzA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VzS-JZ-PLV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="AnB-8W-CMk" kind="relationship" relationship="rootViewController" id="owx-Mv-3x1"/>
+                        <segue destination="AnB-8W-CMk" kind="relationship" relationship="rootViewController" id="J20-He-TGQ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sol-xt-aY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ZT-5f-d9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="-98"/>
+            <point key="canvasLocation" x="732" y="-101"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VBq-rv-poX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VZE-8q-6ik" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="history" id="e8j-BS-iVb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="09R-Fe-SFB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S8y-Er-LpA" kind="relationship" relationship="rootViewController" id="WVO-cZ-MVN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMC-5o-b1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="624"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qya-xF-CcD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ggU-D1-70D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="652-dw-JCI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lbO-op-AM9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RWZ-qC-C4W" kind="relationship" relationship="rootViewController" id="jUv-OM-o9R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n9h-6B-neI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="1316"/>
         </scene>
     </scenes>
 </document>

@@ -8,6 +8,8 @@
 
 #import "DNLecturesTableViewController.h"
 
+#import "DNBeginPlaybackCommand.h"
+
 @interface DNLecturesTableViewController ()
 
 @end
@@ -72,8 +74,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController *blah = [self.storyboard instantiateViewControllerWithIdentifier:@"kDetail"];
-    [self.navigationController pushViewController:blah animated:YES];
+//    UIViewController *blah = [self.storyboard instantiateViewControllerWithIdentifier:@"kDetail"];
+//    [self.navigationController pushViewController:blah animated:YES];
+    
+    [DNBeginPlaybackCommand switchToPlaybackTabAndResumePlaying:nil];
 }
 
 /*
